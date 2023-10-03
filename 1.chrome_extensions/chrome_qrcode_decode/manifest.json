@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "右键二维码识别",
+    "version": "1.0.0",
+    "description": "右键二维码识别",
+    "icons":
+    {
+        "16": "img/favicon_ico.png",
+        "32": "img/favicon_ico.png",
+        "48": "img/favicon_ico.png",
+        "128": "img/favicon_ico.png"
+    },
+    "browser_action":
+    {
+        "default_title": "右键二维码识别",
+        "default_popup": "popup.html"
+    },
+    "background":
+    {
+        "scripts": ["js/qrcode.js", "js/index.js"]
+    },
+
+    "permissions":
+    [
+        "contextMenus", 
+        "tabs",
+        "notifications", 
+        "storage", 
+        "cookies",
+        "activeTab",
+        "http://*/*",
+        "https://*/*"
+    ]
+}
